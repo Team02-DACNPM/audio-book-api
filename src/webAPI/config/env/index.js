@@ -9,6 +9,8 @@ module.exports = {
     GMAIL: {
         email: process.env.GMAIL_EMAIL,
         password: process.env.GMAIL_PASSWORD,
+        host: process.env.GMAIL_HOST,
+        port: process.env.GMAIL_PORT,
     },
     CLIENT_URL: process.env.CLIENT_URL || 'http://localhost:3000',
 };

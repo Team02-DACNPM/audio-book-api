@@ -3,8 +3,8 @@ const { GMAIL } = require('../config/env');
 
 const adminEmail = GMAIL.email;
 const adminPassword = GMAIL.password;
-const mailHost = 'smtp.gmail.com';
-const mailPort = 587;
+const mailHost = GMAIL.host;
+const mailPort =  GMAIL.port;
 
 const sendMail = (to, subject, htmlContent) => {
     const transporter = nodeMailer.createTransport({

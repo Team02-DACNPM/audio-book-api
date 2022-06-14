@@ -1,4 +1,4 @@
-const AudioService = require('../../applicationCore/services/audio.service');
+const AudioService = require('../../../applicationCore/services/audio.service');
 class AudioCommandController {
     // [POST] /books/:bookId/audios
     async createAudio(req, res) {
