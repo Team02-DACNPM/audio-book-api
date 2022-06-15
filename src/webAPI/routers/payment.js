@@ -5,4 +5,5 @@ const authenticate = require('../../authenticate');
 
 router.post('/', authenticate.verifyUser, paymentController.create);
 router.get('/', authenticate.verifyUser, paymentController.findAll);
+router.get('/:bookId', authenticate.verifyUser, paymentController.find);
 module.exports = router;
